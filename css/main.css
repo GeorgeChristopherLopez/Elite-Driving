@@ -1,11 +1,12 @@
-    :root {
-        --main-color: #0FF9BA;
-        --secondary-color: #111A30;
-        --light: #fff;
-        --dark: #222;
-        --grey: #ccc;
-        --purple: #6437BF;
-    }
+:root {
+    /* --main-color: #0FF9BA;**/
+    --main-color: #F68F1E;
+    --secondary-color: #111A30;
+    --light: #fff;
+    --dark: #222;
+    --grey: #ccc;
+    --hotrod: #DD1F2E;
+}
 
 
     /*GLOBAL*/
@@ -15,16 +16,17 @@
         padding: 0;
     }
 
-.navbar-light, .navbar-toggler {
-    border-color: #F8F9FA !important;
+button.navbar-toggler {
+    border-color: var(--main-color) !important;
+    color: white;
 }
-.navbar-light:hover, .navbar-toggler:hover {
-    border-color: #F8F9FA !important;
+button.navbar-toggler:hover {
+    border-color: none !important;
 }
 
 
 html {
-    height: 100%;
+    min-height: 100%;
 }
 
     body {
@@ -62,10 +64,12 @@ html {
         margin: auto;
     }
 
+  
+
     /* HEADER AND NAV */
 
         header {
-            background: var(--light);
+            background: var(--secondary-color);
             color: var(--dark);
             padding: 2rem;
         }
@@ -81,11 +85,22 @@ html {
             padding: 0rem .4rem;
         }
 
-
+a.nav-link:hover {
+    color: var(--main-color);
+}
     .branding {
         width: 16.66%;
     }
 
+    a.navbar-brand{
+        text-decoration: none;
+        color: var(--main-color);
+    }
+
+a.navbar-brand:hover {
+    text-decoration: none;
+    color: var(--main-color);
+}
 
     .main-nav {
         width: 58.33%;
@@ -97,29 +112,33 @@ html {
 
     header a.btn-primary {
       padding: .40rem 1rem;
+      margin: 1rem;
+      text-decoration: none;
     }
-    header a.btn-outlined {
-        padding: .33rem .25rem;
-    }
+header a.btn-outlined {
+    padding: .33rem .25rem;
+    margin: 1rem;
+    text-decoration: none;
+}
     /*WELCOME SECTION*/
 
     .welcome {
         min-height: 70vh;
-        background: url('/img/car-1.jpg') center no-repeat;
+        background: url('../img/car-1.jpg') center no-repeat;
         background-size: cover;
         color: var(--light);
         text-align: center;
     }
 
        .inner {
-            padding: 5rem;
+            padding: 10rem;
             color: var(--light);
         }
 
     .overlay {
         width: 100%;
         height: 70vh;
-        background: rgba(17,26,48,0.9);
+        background: rgba(17,26,48,0.7);
     }
 
     .welcome h1{
@@ -144,15 +163,17 @@ html {
 
     }
 
-    a.btn-primary:hover {
+  .welcome a.btn-primary:hover,  a.btn-primary:hover {
+        text-decoration: none;
         background: darkgreen;
         color: var(--light);
     }
 
-    a.btn-outlined {
-        color: var(--secondary-color);
-        background: var(--light);
-    }
+a.btn-outlined {
+    text-decoration: none;
+    color: var(--secondary-color);
+    background: var(--light);
+}
 
         a.btn-outlined:hover {
             border: 1px solid #fff;
@@ -165,18 +186,17 @@ html {
         margin-bottom: 30px;
     }
 
-    .welcome .btn-primary {
-        background: var(--main-color);
-        padding: .75rem;
-    
+.welcome a.btn-primary {
+    background: var(--main-color);
+    padding: .75rem;
+    text-decoration: none;
+}
 
-    }
-
-    .welcome .btn-outlined {
-        border: 1px solid #fff;
-        padding: .75rem;
-   
-    }
+.welcome a.btn-outlined {
+    border: 1px solid #fff;
+    padding: .75rem;
+    text-decoration: none;
+}
 
     /*ICONS*/
     .icons-header{
@@ -195,13 +215,12 @@ html {
 
     /*SIGN UP NOW  */
 
-    .signup-now{
-    
-        text-align: center;
-        background: url('/img/car-2.jpg') center no-repeat;
+.signup-now {
+    text-align: center;
+    background: url('../img/car-2.jpg') center no-repeat;
         min-height: 70vh;
         background-size: cover;
-    }
+}
 
     .signup-now .btn-primary {
         background: var(--main-color);
@@ -248,28 +267,28 @@ html {
         
         }
 
-    
-       #review-1{
-           background: url('/img/teen-1.jpg') center no-repeat;
-           background-size: cover;
-           height: 80%;
-       }
 
-        #review-2 {
-            background: url('/img/teen-2.jpg') center no-repeat;
-            background-size: cover;
-            height: 80%;
-        }
-        #review-3 {
-            background: url('/img/teen-3.jpg') center no-repeat;
-            background-size: cover;
-            height: 80%;
-        }
-        #review-4 {
-            background: url('/img/teen-4.jpg') center no-repeat;
-            background-size: cover;
-            height: 80%;
-        }
+#review-1 {
+    background: linear-gradient( rgba(17,26,48,0.3), rgba(17,26,48,0.3) ), url('../img/teen-1.jpg') center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+
+#review-2 {
+    background: linear-gradient( rgba(17,26,48,0.3), rgba(17,26,48,0.3) ),url('../img/teen-2.jpg') center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+#review-3 {
+    background: linear-gradient( rgba(17,26,48,0.3), rgba(17,26,48,0.3) ), url('../img/teen-3.jpg') center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
+#review-4 {
+    background: linear-gradient( rgba(17,26,48,0.3), rgba(17,26,48,0.3) ), url('../img/teen-4.jpg') center no-repeat;
+    background-size: cover;
+    height: 80%;
+}
         #review-btn {
             width: 100%;
             height: 20%;
@@ -294,7 +313,7 @@ html {
         }
 
         .contact h4{
-        font-size: 2.5rem;
+        font-size: 2rem;
         }
         
         .contact p {
@@ -314,7 +333,7 @@ html {
         }
 
         #links{
-            padding: 1rem;
+            padding: 2rem;
         }
         #newsletter{
             text-align: center;
@@ -324,17 +343,24 @@ html {
             padding: 1rem;
         }
 
-      
-        input {
-            width: 50%;
-      
+        #address{
+            margin: 0;
+            padding: 2rem;
         }
 
+      
+        input {
+            width: 75%;
+      
+        }
+        .contact div.row{
+            margin: auto;
+        }
         .btn-subscribe {
-            width: 50%;
+            width: 25%;
             font-size: .75rem;
             background: var(--main-color);
-            padding: .4rem;
+            padding: .6rem 0rem .6rem 0rem;
         }
 
 
@@ -345,3 +371,39 @@ html {
             padding: 1rem;
         }
 
+@media screen and (max-width: 1000px) {
+    #login-nav {
+        display: inline-block;
+    justify-content: center;
+    align-items: center;
+   }
+    
+  ul.navbar-nav li{
+      margin: auto;
+  }
+
+  ul.navbar-nav{
+      margin-bottom: 2rem;
+  }
+}
+
+        @media screen and (max-width: 700px){
+            .inner{
+                padding: 5rem;
+            }
+        }
+
+
+@media screen and (max-width: 400px) {
+    .inner {
+        padding: 4rem;
+    }
+}
+
+
+
+@media screen and (max-width: 350px) {
+    .inner {
+        padding: 1rem;
+    }
+}

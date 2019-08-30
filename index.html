@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
 <head>
     <link href="css/main.css" rel="stylesheet" />
@@ -14,9 +14,9 @@
     <!--- header and nav  -->
     <header class="main-header">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#">Elite Driving</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -41,8 +41,8 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
-                <form class="form-inline my-2 my-lg-0">
-                    <ul class="navbar-nav mr-auto">
+               
+                    <ul id="login-nav"class="navbar-nav m-auto">
                         <li class="nav-item">
                             <a class="btn-primary" href="#">Login</a>
                         </li>
@@ -50,7 +50,6 @@
                             <a class="btn-outlined" href="#">Sign Up</a>
                         </li>
                     </ul>
-                </form>
             </div>
         </nav>
 
@@ -83,12 +82,13 @@
 
     <!---ICONS SECTION-->
     <section class="icons">
+        <div class="container">
         <div class="row">
             <div class="icon-container col-xs-12 col-md-4"><i style="font-size: 4rem;" class="fas fa-chalkboard-teacher"></i><p>Class Room Courses</p></div>
             <div class="icon-container col-xs-12 col-md-4"><i style="font-size: 4rem;" class="fas fa-id-card"></i><p>Permit Preperation</p></div>
             <div class="icon-container col-xs-12 col-md-4"><i style="font-size: 4rem;" class="fas fa-car"></i><p>Road Test Services</p></div>
         </div>
-
+            </div>
     </section>
     <hr />
     <!----FEATURES SECTION-->
@@ -153,21 +153,21 @@
     <section class="contact">
         <div class="container">
         <div class="row">
-            <div id="brand" class="col-xs-12 col-md-3">
+            <div id="brand" class="col-xs-12 col-lg-3">
                 <h4>Elite Driving</h4>
                 <p>Making your driving, Elite.</p>
             </div>
-            <div id="newsletter" class="col-xs-12 col-md-3">
+            <div id="newsletter" class="col-xs-12 col-lg-3">
                 <h4>Newsletter</h4>
                 <p>
                     Stay up to date on the latest Elite Driving news and tips. Be the first to learn about discounts and new programs.
                 </p>
-                <div class="container">
+                <div class="row">
                 <input type="email" />
                 <a href="#" class="btn-subscribe">Subscribe</a>
                 </div>
             </div>
-            <div id="links" class="col-xs-12 col-md-3">
+            <div id="links" class="col-xs-12 col-lg-3">
                 <ul>
                     <li>Useful Links</li>
                     <li><a href="#">About</a></li>
@@ -177,9 +177,9 @@
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="col-xs-12 col-md-3">
+            <div id="address" class="col-xs-12 col-lg-3">
                 <p>Contact Us</p>
-                <address class="ng-binding">303 Trinity St.<br> Los Angelus CA<br> United States </address>
+                <address>303 Trinity St.<br> Los Angelus CA<br> United States </address>
             </div>
         </div>
         </div>
