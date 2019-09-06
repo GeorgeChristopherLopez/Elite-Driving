@@ -1,7 +1,6 @@
 :root {
-    /* --main-color: #0FF9BA;**/
     --main-color: #F68F1E;
-    --secondary-color: #111A30;
+    --secondary-color: #132939;
     --light: #fff;
     --dark: #222;
     --grey: #ccc;
@@ -387,7 +386,7 @@ a.btn-outlined {
   }
 }
 
-        @media screen and (max-width: 700px){
+        @media screen and (max-width: 768px){
             .inner{
                 padding: 5rem;
             }
