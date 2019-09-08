@@ -4,6 +4,7 @@
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/all.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <meta charset="utf-8" />
     <title></title>
@@ -15,7 +16,7 @@
     <header class="main-header">
 
         <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand" href="#">Elite Driving</a>
+            <a class="navbar-brand  wow fadeIn" data-wow-duration="2s" href="#">Elite Driving</a>
             <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -23,33 +24,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link wow fadeIn" data-wow-duration="2s"  href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link wow fadeInDown" data-wow-duration="3s" data-wow-delay=".1s" href="#">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Vehicles</a>
+                        <a class="nav-link wow fadeInDown" data-wow-duration="3s" data-wow-delay=".31s" href="#">Vehicles</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Guides</a>
+                        <a class="nav-link wow fadeInDown" data-wow-duration="3s" data-wow-delay=".51s" href="#">Guides</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Practice Exams</a>
+                        <a class="nav-link wow fadeInDown" data-wow-duration="3s" data-wow-delay=".71s" href="#">Practice Exams</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link wow fadeInDown" data-wow-duration="3s" data-wow-delay=".91s" href="#">Contact</a>
                     </li>
                 </ul>
-               
-                    <ul id="login-nav"class="navbar-nav m-auto">
-                        <li class="nav-item">
-                            <a class="btn-primary" href="#">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn-outlined" href="#">Sign Up</a>
-                        </li>
-                    </ul>
+
+                <ul id="login-nav" class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="btn-primary" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn-outlined" href="#">Sign Up</a>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -57,7 +58,7 @@
     <!--- WELCOME SECTION -->
     <section class="welcome">
         <div class="overlay">
-            <div class="inner">
+            <div class="inner wow fadeIn" data-wow-duration="2s">
                 <h1>Making Your Driving, Elite</h1>
                 <p>An high level driving school, with outstanding support.</p>
                 <ul>
@@ -73,7 +74,7 @@
     <!---ICONS HEADER SECTION-->
     <section class="icons-header">
         <div class="container">
-            <h1>Adept Curriculum</h1>
+            <h1 class="wow bounce" data-wow-duration="2s" data-wow-delay="1s">Adept Curriculum</h1>
             <p>Elite Driving has a large variety of classes for people of all driving abilities. Whether your getting your first license or brushing up your skills. Elite Driving has got you covered.</p>
         </div>
 
@@ -83,12 +84,12 @@
     <!---ICONS SECTION-->
     <section class="icons">
         <div class="container">
-        <div class="row">
-            <div class="icon-container col-xs-12 col-md-4"><i style="font-size: 4rem;" class="fas fa-chalkboard-teacher"></i><p>Class Room Courses</p></div>
-            <div class="icon-container col-xs-12 col-md-4"><i style="font-size: 4rem;" class="fas fa-id-card"></i><p>Permit Preperation</p></div>
-            <div class="icon-container col-xs-12 col-md-4"><i style="font-size: 4rem;" class="fas fa-car"></i><p>Road Test Services</p></div>
-        </div>
+            <div class="row">
+                <div class="icon-container col-xs-12 col-md-4 wow fadeInUp" data-wow-duration="2s"><i style="font-size: 4rem;" class="fas fa-chalkboard-teacher"></i><p>Class Room Courses</p></div>
+                <div class="icon-container col-xs-12 col-md-4 wow fadeInUp" data-wow-duration="2s"><i style="font-size: 4rem;" class="fas fa-id-card"></i><p>Permit Preperation</p></div>
+                <div class="icon-container col-xs-12 col-md-4 wow fadeInUp" data-wow-duration="2s"><i style="font-size: 4rem;" class="fas fa-car"></i><p>Road Test Services</p></div>
             </div>
+        </div>
     </section>
     <hr />
     <!----FEATURES SECTION-->
@@ -122,28 +123,28 @@
     <section class="testimonials">
         <div class="container">
             <div class="row">
-           
-            <div class="col-xs-12 col-md-3" id="box">
-                <div id="review-1"><h4>There Great!</h4></div>
-                <div id="review-btn"><p>Review</p></div>
-            </div>
-            
-            <div class="col-xs-12 col-md-3" id="box">
-                <div id="review-2"><h4>There Great!</h4></div>
-                <div id="review-btn"><p>Review</p></div>
-            </div>
-            
-                <div class="col-xs-12 col-md-3" id="box">
-                <div id="review-3"><h4>There Great!</h4></div>
-                <div id="review-btn"><p>Review</p></div>
-            </div>
-            
-            <div class="col-xs-12 col-md-3" id="box">
-                <div id="review-4"><h4>There Great!</h4></div>
-                <div id="review-btn"><p>Review</p></div>
-            </div>
 
+                <div class="col-xs-12 col-md-3" id="box">
+                    <div id="review-1"><h4>There Great!</h4></div>
+                    <div id="review-btn"><p>Review</p></div>
                 </div>
+
+                <div class="col-xs-12 col-md-3" id="box">
+                    <div id="review-2"><h4>There Great!</h4></div>
+                    <div id="review-btn"><p>Review</p></div>
+                </div>
+
+                <div class="col-xs-12 col-md-3" id="box">
+                    <div id="review-3"><h4>There Great!</h4></div>
+                    <div id="review-btn"><p>Review</p></div>
+                </div>
+
+                <div class="col-xs-12 col-md-3" id="box">
+                    <div id="review-4"><h4>There Great!</h4></div>
+                    <div id="review-btn"><p>Review</p></div>
+                </div>
+
+            </div>
         </div>
 
 
@@ -152,36 +153,36 @@
     <!---CONTACT SECTIONS-->
     <section class="contact">
         <div class="container">
-        <div class="row">
-            <div id="brand" class="col-xs-12 col-lg-3">
-                <h4>Elite Driving</h4>
-                <p>Making your driving, Elite.</p>
-            </div>
-            <div id="newsletter" class="col-xs-12 col-lg-3">
-                <h4>Newsletter</h4>
-                <p>
-                    Stay up to date on the latest Elite Driving news and tips. Be the first to learn about discounts and new programs.
-                </p>
-                <div class="row">
-                <input type="email" />
-                <a href="#" class="btn-subscribe">Subscribe</a>
+            <div class="row">
+                <div id="brand" class="col-xs-12 col-lg-3">
+                    <h4>Elite Driving</h4>
+                    <p>Making your driving, Elite.</p>
+                </div>
+                <div id="newsletter" class="col-xs-12 col-lg-3">
+                    <h4>Newsletter</h4>
+                    <p>
+                        Stay up to date on the latest Elite Driving news and tips. Be the first to learn about discounts and new programs.
+                    </p>
+                    <div class="row">
+                        <input type="email" />
+                        <a href="#" class="btn-subscribe">Subscribe</a>
+                    </div>
+                </div>
+                <div id="links" class="col-xs-12 col-lg-3">
+                    <ul>
+                        <li>Useful Links</li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Vehicles</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Practice Exam</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div id="address" class="col-xs-12 col-lg-3">
+                    <p>Contact Us</p>
+                    <address>303 Trinity St.<br> Los Angelus CA<br> United States </address>
                 </div>
             </div>
-            <div id="links" class="col-xs-12 col-lg-3">
-                <ul>
-                    <li>Useful Links</li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Vehicles</a></li>
-                    <li><a href="#">Guides</a></li>
-                    <li><a href="#">Practice Exam</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div id="address" class="col-xs-12 col-lg-3">
-                <p>Contact Us</p>
-                <address>303 Trinity St.<br> Los Angelus CA<br> United States </address>
-            </div>
-        </div>
         </div>
     </section>
 
@@ -192,5 +193,13 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script src="js/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+
 </body>
 </html>
